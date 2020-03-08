@@ -1,0 +1,1 @@
+from jqdatasdk import *import pandas as pdfrom datetime import datetimeimport numpyauth('13104869992', '869992')def init():    # 设置token    ts.set_token('ce4d270082966cd290cc3ca46760f1a9388600352aef0ded8953629b')    # 初始化接口    pro = ts.pro_api()def get_price_data():    # 获取指数收盘价数据    data = pro.index_daily(ts_code=code, start_date=start, end_date=end)
